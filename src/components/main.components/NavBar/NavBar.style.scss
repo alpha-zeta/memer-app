@@ -1,0 +1,33 @@
+.navCont {
+  // padding: 10px 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #6200ee;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+}
+Title {
+  display: inline;
+}
+Util {
+  display: flex;
+  float: right;
+}
+// .disN {
+//   display: none;
+// }
+.addMeme {
+  height: 300px;
+  width: 100%;
+  animation-name: example;
+  animation-duration: 0.3s;
+  display: block;
+}
+@keyframes example {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px;
+  }
+}

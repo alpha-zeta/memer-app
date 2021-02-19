@@ -1,0 +1,66 @@
+$neon: rgb(100, 255, 218);
+
+$normal: rgb(136, 145, 176);
+
+$normalFade: rgba(136, 145, 176, 0.7);
+
+$lemon: #ccf000;
+
+$fDark: rgba(0, 0, 0, 0.4);
+
+.expand {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  float: right;
+  cursor: pointer;
+  .burger {
+    width: 6px;
+    height: 35px;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: $lemon;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 2px 5px #777;
+  }
+  .burger::after,
+  .burger::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 6px;
+    height: 35px;
+    border-radius: 50px;
+    background: $lemon;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 2px 5px #777;
+  }
+  .burger::after {
+    transform: translateX(15px);
+  }
+  .burger::before {
+    transform: translateX(-15px);
+  }
+  .exp {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    background: transparent;
+    box-shadow: none;
+  }
+  .exp:before {
+    content: "";
+    height: 40px;
+    transform-origin: center;
+    transform: rotate(-45deg);
+    background-color: red;
+  }
+  .exp:after {
+    content: "";
+    height: 40px;
+    transform-origin: center;
+    transform: rotate(45deg);
+    background-color: red;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+nav {
+  border-bottom: 2px solid #6200ee;
+  color: #6200ee;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-toggler {
+  border: none;
+}
